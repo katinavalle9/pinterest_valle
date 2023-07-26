@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="shortcut icon" href="./recursos/favicon_pinterest.png" type="image/svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./lib/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./lib/MDB5-STANDARD-UI-KIT-Free-6.4.0/css/mdb.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav id="navbar-pinterest" class="px-5 py-3 sticky-md-top ps" style="z-index: 9999999">
+            <div class="row">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-1 d-flex aling-items-center">
+                            <!-- Logo -->
+                            <a href=" https://www.pinterest.com">
+                                <i class="fa-brands fa-pinterest fa-2xl" id="pinterest-icon"
+                                    style="color: #dd0833;"></i>
+                            </a>
+                        </div>
+                        <div class="col-11">
+                            <div class="form-group">
+                                <input type="search" class="form-control rounded-pill px-3 .finder"
+                                    placeholder="Buscar" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <!--elementos -->
+                    <ul class="navbar-nav flex-row d-flex justify-content-around">
+                        <!-- notifications -->
+                        <li class="nav-item me-4 me-lg-1">
+                            <a class="nav-link hidden-arrow" href="#" role="button" aria-expanded="false">
+                                <i id="notifications" class="fas fa-bell fa-lg"></i>
+                                <span class="badge rounded-pill badge-notification bg-danger"></span>
+                            </a>
+                        </li>
+                        <!-- message -->
+                        <li class="nav-item me-3 me-lg-1">
+                            <a class="nav-link hidden-arrow" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-comment-dots fa-lg"></i>
+                                <span class="badge rounded-pill badge-notification bg-danger"></span>
+                            </a>
+                        </li>
+                        <!-- user  -->
+                        <li class="nav-item me-3 me-lg-1">
+                            <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+                                <img id="profile-img" src="./recursos/user-large-solid.svg" class="rounded-circle"
+                                    height="22" alt="user" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- contenedor imagenes -->
+        <main id="content">
+            <section class="mx-5">
+                <div class="pin_container w-100">
+                    <div class="card card_medium" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/amarillo.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/blanco.webp" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_small" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/bordado.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_medium" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/espejo.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/flores.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_medium" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/foco.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/mariposas.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/papel.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_small" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/vaso.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_small" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/14b.jpg_1301049368.webp" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/CA2ZfW.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/d98a08b4aceb4a392b19c60b88e3b3a3.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/0a2f19910e596f722e558a8cc57b3023.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_medium" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/download (1).jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_medium" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/download.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_small" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/download (2).jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_small" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/fb0b739011e634e4e124aec5618ebfcf.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_medium" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/images.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/T3A5935-350x525.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_medium" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/recamara.webp" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_small" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/IMG_3349-350x525.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_small" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/0c58b5447fbefba7a429c47d4f20a77d.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_medium" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/64071de27885a54f922119c132fea0c1.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/93d43b91a3f26366222a64afb6bb7fc0.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/download (3).jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_large" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos//fec14d0884841ca7f7ba1b3c10216233.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_medium" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/images (1).jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_medium" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/images (2).jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_small" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/93d43b91a3f26366222a64afb6bb7fc0.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                    <div class="card card_small" style="opacity: 1;">
+                        <div class="pin_modal">
+                            <div class="modal_head">
+                                <div class="save_card">Guardar</div>
+                            </div>
+                            <div class="modal_foot">
+                                <div class="destination">
+                                    <div class="pint_mock_icon_container">
+                                        <img src="./recursos/upper-right-arrow.png" alt="destination"
+                                            class="pint_mock_icon">
+                                    </div>
+                                    <span></span>
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/send.png" alt="send" class="pint_mock_icon">
+                                </div>
+
+                                <div class="pint_mock_icon_container">
+                                    <img src="./recursos/ellipse.png" alt="edit" class="pint_mock_icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pin_image">
+                            <img src="./recursos/rojo.jpg" class="pin_max_height">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright:
+                <a class="text-dark" href="https://www.pinterest.com">Pinterest</a>
+            </div>
+            <!-- Copyright -->
+
+
+        </footer>
+    </header>
+
+    <script src="./lib/fontawesome-free-6.4.0-web/js/all.min.js"></script>
+    <script src="./lib/MDB5-STANDARD-UI-KIT-Free-6.4.0/js/mdb.min.js"></script>
+</body>
+
+</html>
